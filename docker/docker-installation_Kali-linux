@@ -1,0 +1,17 @@
+sudo apt update -> downloads updated package metadata from configured software servers then
+                   updates information about available packages, versions, dependencies and download locations
+
+
+sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -> docker-ce(Community Edition) is the the docker engine, it manages containers and images
+                                                                                                  -> docker-ce-cli is the docker command line client that forwards typed commands to the docker engine
+                                                                                                  -> containerd.io handles the lower level lifecycle of containers, container processes, images and storage
+                                                                                                  -> docker-buildx-plugin is responsible for building images
+                                                                                                  -> docker-compose-plugin lets you define and manage multi-container application(via yaml files)
+
+sudo systemctl enable --now docker -> tells the OS to start docker on start-up, --now tell systemctl to start the service after successful enabling
+sudo systemctl status docker -> check whether docker is up and running
+
+
+Additional notes:
+sudo apt upgrade -> Downloads and installs available upgrades for installed packages,
+                   subject to APT's dependency and package-change rules.
